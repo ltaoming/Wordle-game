@@ -171,7 +171,9 @@ function checkWord(){
             else{
                 curTile.classList.add("incorrect");
                 let keyTile = document.getElementById("Key" + letter);
-                keyTile.classList.add("incorrect");
+                if(!keyTile.classList.contains("correct") || !keyTile.classList.contains("present")){
+                    keyTile.classList.add("incorrect");
+                }
             }
         }
     }
@@ -179,4 +181,3 @@ function checkWord(){
     cur_row++;
     cur_col = 0;
 }
-
