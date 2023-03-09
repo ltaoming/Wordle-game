@@ -171,7 +171,7 @@ function checkWord(){
             else{
                 curTile.classList.add("incorrect");
                 let keyTile = document.getElementById("Key" + letter);
-                if(!keyTile.classList.contains("correct") || !keyTile.classList.contains("present")){
+                if(!keyTile.classList.contains("correct") && !keyTile.classList.contains("present")){
                     keyTile.classList.add("incorrect");
                 }
             }
