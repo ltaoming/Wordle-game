@@ -41,7 +41,7 @@ function keyInput(e){
         checkWord();
     }
 
-    if(!gameOver && cur_row == height){
+    if(!gameOver && cur_row == rows){
         gameOver = true;
         document.getElementById("answer").innerText = word;
     }
